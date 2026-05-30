@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Servidor de Minecraft do Heitor Maydana — junte-se ao Discord e jogue com a gente!" />
+  <meta name="theme-color" content="#7BC950" />
+  <title>🎮 Servidor do Heitor Maydana — Maynecraft</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Fredoka:wght@500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%237BC950'/%3E%3Crect x='0' y='0' width='32' height='10' fill='%23A0DA70'/%3E%3Crect x='4' y='4' width='4' height='4' fill='%2390C860'/%3E%3Crect x='20' y='2' width='4' height='4' fill='%2390C860'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- Céu com nuvens -->
+  <div class="sky" aria-hidden="true">
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div class="sun"></div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+
+    <div class="hero-inner">
+      <div class="hero-images">
+        <button class="heitor-img-btn" data-img="01.png" aria-label="Ver imagem grande do Heitor 1">
+          <img src="01.png" alt="Heitor sorrindo, arte infantil" class="heitor-img heitor-img-1" loading="lazy" />
+        </button>
+        <button class="heitor-img-btn" data-img="02.png" aria-label="Ver imagem grande do Heitor 2">
+          <img src="02.png" alt="Heitor com chapéu de Minecraft, arte infantil" class="heitor-img heitor-img-2" loading="lazy" />
+        </button>
+      </div>
+      <div class="logo-block" aria-hidden="true">
+        <span class="block block-grass"></span>
+        <span class="block block-dirt"></span>
+        <span class="block block-diamond"></span>
+        <span class="block block-gold"></span>
+      </div>
+      <h1 class="title">
+        <span class="title-line">✨ Servidor do</span>
+        <span class="title-name">HEITOR MAYDANA</span>
+      </h1>
+      <p class="subtitle">Um servidor de Minecraft super divertido feito pra criançada! 🎮💎</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-discord" href="https://discord.gg/F5VjXx9xNw" target="_blank" rel="noopener">
+          <span class="btn-emoji">💬</span> Entrar no Discord
+        </a>
+        <a class="btn btn-minecraft" href="#como-entrar">
+          <span class="btn-emoji">⛏️</span> Como jogar
+        </a>
+      </div>
+    </div>
+
+    <!-- Chão de grama -->
+    <div class="ground" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- ETAPAS -->
+    <section class="section" id="como-entrar">
+      <div class="container">
+        <h2 class="section-title">🚀 Como entrar no servidor</h2>
+        <p class="section-sub">É só seguir esses 4 passinhos com um adulto pertinho 👨‍👩‍👧</p>
+
+        <ol class="steps">
+          <!-- Passo 1 -->
+          <li class="step">
+            <div class="step-number">1</div>
+            <div class="step-body">
+              <h3>💬 Entre no nosso Discord</h3>
+              <p>O Discord é onde a gente conversa e libera o acesso ao servidor.</p>
+              <a class="btn btn-discord btn-sm" href="https://discord.gg/F5VjXx9xNw" target="_blank" rel="noopener">
+                Entrar no Discord →
+              </a>
+              <p class="step-hint">🔗 <code>https://discord.gg/F5VjXx9xNw</code></p>
+            </div>
+          </li>
+
+          <!-- Passo 2 -->
+          <li class="step">
+            <div class="step-number">2</div>
+            <div class="step-body">
+              <h3>🛡️ Receba o cargo <span class="role">Maynecrafter</span></h3>
+              <p>Depois de entrar no Discord, peça pro Heitor (ou pra um responsável dele) liberar seu cargo.</p>
+              <p class="step-hint">💡 Dica: mande um <em>oi</em> bem fofo no canal de boas-vindas pra avisar que você chegou!</p>
+            </div>
+          </li>
+
+          <!-- Passo 3 -->
+          <li class="step">
+            <div class="step-number">3</div>
+            <div class="step-body">
+              <h3>📝 Registre seu nick do Minecraft</h3>
+              <p>No Discord, em qualquer canal, digite:</p>
+              <pre class="code"><span class="cmd">/registrar</span> <span class="arg">SeuNickDoMinecraft</span></pre>
+              <p>Isso conecta seu Discord ao seu nick e te libera na whitelist do servidor. ✨</p>
+              <p class="step-hint">Outros comandos úteis:</p>
+              <ul class="cmd-list">
+                <li><code>/meu_nick</code> — mostra qual nick está registrado</li>
+                <li><code>/desregistrar</code> — tira seu nick (se quiser trocar)</li>
+                <li><code>/acesso</code> — mostra de novo como entrar</li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Passo 4 -->
+          <li class="step">
+            <div class="step-number">4</div>
+            <div class="step-body">
+              <h3>⛏️ Conecte no Minecraft!</h3>
+              <p>Abre o Minecraft <strong>Java Edition (26.1.2)</strong>, vai em <em>Multijogador → Adicionar Servidor</em>, e coloca o endereço:</p>
+              <div class="server-address">
+                <span class="ip">minecraft.heitormaydana.com.br</span>
+                <button class="copy-btn" data-copy="minecraft.heitormaydana.com.br" aria-label="Copiar endereço">📋 Copiar</button>
+              </div>
+              <p class="step-hint">🎉 Pronto! Agora é só clicar em <strong>Entrar no Servidor</strong> e divertir!</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- COMANDOS DIVERTIDOS -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">🎉 Comandos divertidos no Discord</h2>
+        <p class="section-sub">Use no Discord pra ter ajudinhas e mágicas no jogo!</p>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card-icon">😄</div>
+            <h3>Pra todo mundo</h3>
+            <ul>
+              <li><code>/oi</code> — saudação fofa</li>
+              <li><code>/piada</code> — piada de Minecraft</li>
+              <li><code>/dado</code> — rola um dado</li>
+              <li><code>/players</code> — quem tá online</li>
+              <li><code>/ranking</code> — top 3 jogadores</li>
+              <li><code>/conversar</code> — fala no chat do jogo</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">💎</div>
+            <h3>Mágicas (custam diamantes!)</h3>
+            <ul>
+              <li><code>/curar</code> — cura vida e fome (2 💎)</li>
+              <li><code>/voar</code> — voa por 3 minutos (3 💎)</li>
+              <li><code>/efeito</code> — força, velocidade... (2 💎)</li>
+              <li><code>/mascote</code> — invoca um bichinho (5 💎)</li>
+              <li><code>/foguete</code> — vai pro céu! (1 💎)</li>
+              <li><code>/teleportar</code> — viaja longe (5 💎)</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">☀️</div>
+            <h3>Clima e tempo</h3>
+            <ul>
+              <li><code>/dia</code> — faz nascer o sol 🌞</li>
+              <li><code>/noite</code> — cai a noite 🌙</li>
+              <li><code>/sol</code> — tempo limpo ☀️</li>
+              <li><code>/chuva</code> — faz chover 🌧️</li>
+              <li><code>/anunciar</code> — anuncia algo no servidor</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGRAS -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">💖 Regras do servidor</h2>
+        <p class="section-sub">Pra ser divertido pra todo mundo!</p>
+
+        <div class="rules">
+          <div class="rule">
+            <span class="rule-emoji">🤝</span>
+            <p>Seja gentil e amigo com todo mundo. Sem brigas! (PvP desligado)</p>
+          </div>
+          <div class="rule">
+            <span class="rule-emoji">🏠</span>
+            <p>Não destrua as construções dos amigos sem pedir.</p>
+          </div>
+          <div class="rule">
+            <span class="rule-emoji">🗣️</span>
+            <p>Nada de palavrão no chat — só palavras bonitas!</p>
+          </div>
+          <div class="rule">
+            <span class="rule-emoji">🎮</span>
+            <p>Divirta-se MUITO! Esse é o objetivo principal. 💚</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section cta">
+      <div class="container">
+        <h2 class="section-title">🌟 Pronto pra começar a aventura?</h2>
+        <p class="section-sub">Clica no botão e vem jogar com o Heitor!</p>
+        <a class="btn btn-discord btn-big" href="https://discord.gg/F5VjXx9xNw" target="_blank" rel="noopener">
+          💬 Entrar no Discord agora
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Feito com 💚 pro <strong>Heitor Maydana</strong> e seus amigos · Minecraft Java 26.1.2</p>
+    <p class="footer-small">heitormaydana.com.br</p>
+  </footer>
+
+  <!-- Galeria Lightbox -->
+  <div id="lightbox-overlay" class="lightbox-overlay" tabindex="-1" aria-modal="true" aria-hidden="true" style="display:none">
+    <div class="lightbox-backdrop"></div>
+    <figure class="lightbox-figure">
+      <img id="lightbox-img" src="" alt="Imagem grande do Heitor" />
+      <figcaption id="lightbox-caption"></figcaption>
+      <button class="lightbox-close" id="lightbox-close" aria-label="Fechar">✖️</button>
+    </figure>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
