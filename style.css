@@ -43,8 +43,8 @@
   z-index: 2;
 }
 .lightbox-figure img {
-  max-width: 60vw;
-  max-height: 60vh;
+  max-width: 96vw;
+  max-height: 88vh;
   border-radius: 18px;
   box-shadow: 0 4px 24px #0006;
   margin-bottom: 12px;
@@ -75,8 +75,8 @@
 }
 @media (max-width: 640px) {
   .lightbox-figure img {
-    max-width: 90vw;
-    max-height: 40vh;
+    max-width: 99vw;
+    max-height: 70vh;
   }
 }
 @keyframes fadeIn {
@@ -213,8 +213,8 @@ body {
   flex-wrap: wrap;
 }
 .heitor-img {
-  width: 160px;
-  height: 160px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   border-radius: 24px 24px 40px 40px;
   border: 6px solid var(--gold);
@@ -234,8 +234,8 @@ body {
     gap: 12px;
   }
   .heitor-img {
-    width: 110px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
     border-width: 4px;
     border-radius: 16px 16px 28px 28px;
   }
@@ -350,7 +350,12 @@ body {
     0 0 0 var(--text);
 }
 
-.btn-discord { background: var(--discord); }
+.btn-discord {
+  background: var(--discord);
+  word-break: break-all;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
 .btn-discord:hover { background: var(--discord-dark); }
 
 .btn-minecraft { background: var(--grass-dark); }
@@ -365,6 +370,23 @@ body {
     inset -3px -3px 0 rgba(0, 0, 0, 0.25),
     inset 3px 3px 0 rgba(255, 255, 255, 0.2),
     4px 4px 0 var(--text);
+  word-break: break-all;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+@media (max-width: 640px) {
+  .btn,
+  .btn-discord,
+  .btn-sm {
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 95vw;
+    white-space: normal;
+  }
+  .btn-emoji {
+    font-size: 18px;
+  }
 }
 
 .btn-big {

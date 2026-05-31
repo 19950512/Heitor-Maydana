@@ -7,7 +7,7 @@ Página estática (HTML + CSS + JS puro), tema Minecraft, **kid-friendly**, com 
 1. Entrar no Discord (`https://discord.gg/F5VjXx9xNw`)
 2. Receber o cargo `Maynecrafter`
 3. Registrar o nick com `/registrar`
-4. Conectar em `minecraft.heitormaydana.com.br` (Minecraft Java 26.1.2)
+4. Conectar em `minecraft.heitormaydana.com.br` (Minecraft Java 1.21.11 release)
 
 ## Estrutura
 
